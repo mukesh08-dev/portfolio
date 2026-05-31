@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for a Full-Stack Software Developer showcasing projects, skills, writing, and contact links."
+    />
+    <title>Full-Stack Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .contact-form,
+      form.contact-form {
+        display: grid;
+        gap: 1rem;
+        padding: 1.35rem;
+      }
+
+      form.contact-form > label {
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+      }
+
+      form.contact-form > label > span {
+        display: block;
+      }
+
+      form.contact-form input,
+      form.contact-form textarea {
+        display: block;
+        width: 100%;
+      }
+    </style>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="#home" aria-label="Home">
+          <span class="brand__mark">FS</span>
+          <span class="brand__text">Full-Stack Developer</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#articles">Articles</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section" id="home">
+        <div class="container hero__grid">
+          <div class="hero__copy reveal">
+            <p class="eyebrow">Modern Full-Stack Software Developer</p>
+            <h1>Hi, I'm MUKESH | Building Scalable Full-Stack Solutions</h1>
+            <p class="hero__summary">
+              I design and ship reliable backends, polished user interfaces, and thoughtful experiences that feel fast from the first click.
+              My work blends clean architecture, strong problem-solving, and a focus on maintainable code that grows with the product.
+            </p>
+
+            <div class="hero__actions">
+              <a class="button button--primary" href="#projects">View My Work</a>
+              <a class="button button--ghost" href="assets/resume.pdf" download>
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <use href="#icon-download"></use>
+                </svg>
+                Download Resume
+              </a>
+            </div>
+
+            <div class="hero__stats" aria-label="Highlights">
+              <article>
+                <strong>10+</strong>
+                <span>Projects shipped</span>
+              </article>
+              <article>
+                <strong>Full-Stack</strong>
+                <span>Product-minded development</span>
+              </article>
+              <article>
+                <strong>Clean UI</strong>
+                <span>Responsive by default</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal">
+            <div class="hero-card">
+              <div class="hero-card__glow"></div>
+              <div class="avatar">
+                <img src="Screenshot_2026-03-08-12-57-53-365_com.google.android.apps.photos~3.jpg" alt="Portrait of Mukesh" />
+              </div>
+              <div class="hero-card__content">
+                <p class="hero-card__label">Available for freelance and full-time roles</p>
+                <p class="hero-card__title">Backend logic. Frontend polish. Product clarity.</p>
+                <div class="hero-card__chips">
+                  <span>Java</span>
+                  <span>React</span>
+                  <span>APIs</span>
+                  <span>SQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About Me</p>
+            <h2>Driven by logic, shaped by design, and grounded in clean execution.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-visual reveal" aria-hidden="true">
+              <div class="about-portrait">
+                <div class="about-portrait__orbit about-portrait__orbit--one"></div>
+                <div class="about-portrait__orbit about-portrait__orbit--two"></div>
+                <div class="about-portrait__core">
+                  <img src="Screenshot_2026-03-08-12-57-53-365_com.google.android.apps.photos~3.jpg" alt="Mukesh portrait" />
+                </div>
+              </div>
+            </div>
+
+            <div class="about-copy reveal">
+              <p>
+                I started with a curiosity for how systems work, and that evolved into a passion for solving complex logical problems with code.
+                Over time, that curiosity expanded from isolated algorithms into complete products, where backend stability and frontend clarity have to work together.
+              </p>
+              <p>
+                Today, I focus on writing clean, maintainable solutions that are easy to scale, test, and evolve. I enjoy building thoughtful interfaces,
+                designing robust APIs, and turning ideas into polished experiences that feel intuitive for users and practical for teams.
+              </p>
+              <p>
+                My transition into full-stack development has been about connecting technical precision with product thinking: understanding the problem,
+                simplifying the architecture, and delivering a result that is both elegant and dependable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">My Skills</p>
+            <h2>Structured for speed, clarity, and the full product stack.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <div class="skill-card__icon">JS</div>
+              <h3>Languages & Back-End</h3>
+              <ul>
+                <li><span class="bullet"></span>Java</li>
+                <li><span class="bullet"></span>APIs and service design</li>
+                <li><span class="bullet"></span>Database management</li>
+                <li><span class="bullet"></span>SQL and NoSQL</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-card__icon">UI</div>
+              <h3>Front-End</h3>
+              <ul>
+                <li><span class="bullet"></span>HTML5 and semantic layouts</li>
+                <li><span class="bullet"></span>CSS3 and responsive systems</li>
+                <li><span class="bullet"></span>JavaScript / TypeScript</li>
+                <li><span class="bullet"></span>Modern frameworks</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-card__icon">DEV</div>
+              <h3>Tools & Environment</h3>
+              <ul>
+                <li><span class="bullet"></span>VS Code</li>
+                <li><span class="bullet"></span>Eclipse</li>
+                <li><span class="bullet"></span>Git and GitHub</li>
+                <li><span class="bullet"></span>Terminal-first workflow</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work that turns practical problems into clean, scalable solutions.</h2>
+          </div>
+
+          <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section" id="profiles">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Coding Profiles & Social Links</p>
+            <h2>Find me where I build, collaborate, and compete.</h2>
+          </div>
+
+          <div class="social-grid reveal">
+            <a class="social-card" href="https://github.com/kitty195" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#icon-github"></use></svg>
+              <div>
+                <strong>GitHub</strong>
+                <span>Repositories and contribution graph</span>
+              </div>
+            </a>
+            <a class="social-card" href="https://www.linkedin.com/in/mukesh08-dev/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#icon-linkedin"></use></svg>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>Professional networking</span>
+              </div>
+            </a>
+            <a class="social-card" href="https://www.instagram.com/_mukesh_01_._" target="_blank" rel="noreferrer" aria-label="Instagram profile">
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#icon-instagram"></use></svg>
+              <div>
+                <strong>Instagram</strong>
+                <span>Personal and creative updates</span>
+              </div>
+            </a>
+            <a class="social-card" href="https://leetcode.com/" target="_blank" rel="noreferrer" aria-label="LeetCode profile">
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><use href="#icon-code"></use></svg>
+              <div>
+                <strong>LeetCode</strong>
+                <span>Problem-solving and DSA practice</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="github-graph reveal" aria-label="GitHub contribution style graphic">
+            <div class="github-graph__header">
+              <h3>Contribution Snapshot</h3>
+              <a href="https://github.com/kitty195" target="_blank" rel="noreferrer">View GitHub</a>
+            </div>
+            <div class="graph-grid" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="articles">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Featured Articles / Blog</p>
+            <h2>Short technical notes on building with intent.</h2>
+          </div>
+
+          <div class="articles-grid" id="articles-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Contact Me</p>
+            <h2>Let's build something useful.</h2>
+            <p>
+              Use the form to send a message directly. It is wired with a clean mailto fallback so it works immediately without a backend.
+            </p>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" action="mailto:mukeshchinnadurai13@gmail.com" method="post" enctype="text/plain">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email Address</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span>Subject</span>
+              <input type="text" name="subject" placeholder="Project inquiry" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="6" placeholder="Tell me about your project or idea..." required></textarea>
+            </label>
+            <button class="button button--primary button--full" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p>Built for fast loading, clean interactions, and responsive presentation.</p>
+        <div class="footer-links">
+          <a href="#home">Back to top</a>
+          <a href="https://github.com/kitty195" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/mukesh08-dev/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <svg class="sr-only" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+      <symbol id="icon-download" viewBox="0 0 24 24">
+        <path d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.42L11 13.59V4a1 1 0 0 1 1-1Z" fill="currentColor"/>
+        <path d="M5 18a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.5c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.17-3.37-1.17-.45-1.14-1.1-1.44-1.1-1.44-.9-.62.07-.61.07-.61.99.08 1.51 1.02 1.51 1.02.88 1.5 2.32 1.07 2.88.82.09-.65.35-1.07.63-1.32-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.02-2.68-.1-.26-.44-1.29.1-2.68 0 0 .83-.27 2.73 1.02A9.5 9.5 0 0 1 12 6.8c.84 0 1.69.11 2.48.33 1.9-1.29 2.73-1.02 2.73-1.02.54 1.39.2 2.42.1 2.68.64.7 1.02 1.59 1.02 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.76c0 .26.18.57.69.48A10 10 0 0 0 12 2Z"/>
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M6.94 6.5A1.94 1.94 0 1 1 5 4.56 1.94 1.94 0 0 1 6.94 6.5ZM5.25 8.5h3.38V20H5.25V8.5Zm5.48 0h3.24v1.57h.05a3.56 3.56 0 0 1 3.2-1.76c3.42 0 4.05 2.25 4.05 5.18V20h-3.37v-5.07c0-1.21-.02-2.77-1.69-2.77-1.7 0-1.96 1.33-1.96 2.68V20h-3.52V8.5Z"/>
+      </symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm10.25 1.6a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3ZM12 7.6A4.4 4.4 0 1 1 7.6 12 4.41 4.41 0 0 1 12 7.6Zm0 2a2.4 2.4 0 1 0 2.4 2.4 2.4 2.4 0 0 0-2.4-2.4Z"/>
+      </symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M8.5 16.5a1 1 0 0 1-.71-.29l-4-4a1 1 0 0 1 0-1.42l4-4a1 1 0 1 1 1.42 1.42L5.91 12l3.3 3.29a1 1 0 0 1-.71 1.71Zm7 0a1 1 0 0 1-.71-1.71L18.09 12l-3.3-3.29a1 1 0 0 1 1.42-1.42l4 4a1 1 0 0 1 0 1.42l-4 4a1 1 0 0 1-.71.29Z"/>
+      </symbol>
+      <symbol id="icon-link" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M10.59 13.41a1 1 0 0 1 0-1.41l2.59-2.59a3 3 0 1 1 4.24 4.24l-1.47 1.47a3 3 0 0 1-4.24 0 1 1 0 1 1 1.41-1.41 1 1 0 0 0 1.42 0l1.47-1.47a1 1 0 1 0-1.42-1.41l-2.59 2.59a1 1 0 0 1-1.41 0Zm2.82-2.82a1 1 0 0 1 0 1.41l-2.59 2.59a3 3 0 0 1-4.24 0 3 3 0 0 1 0-4.24l1.47-1.47a3 3 0 0 1 4.24 0 1 1 0 1 1-1.41 1.41 1 1 0 0 0-1.42 0l-1.47 1.47a1 1 0 1 0 1.42 1.41l2.59-2.59a1 1 0 0 1 1.41 0Z"/>
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm16 3.24-7.47 4.68a1 1 0 0 1-1.06 0L4 8.24V17h16V8.24ZM5 7l7 4.38L19 7H5Z"/>
+      </symbol>
+    </svg>
+  </body>
+</html>
