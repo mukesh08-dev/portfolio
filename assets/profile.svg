@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="profileTitle profileDesc">
+  <title id="profileTitle">Profile avatar placeholder</title>
+  <desc id="profileDesc">Abstract avatar illustration with a soft gradient</desc>
+  <defs>
+    <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#19a9ff" />
+      <stop offset="100%" stop-color="#27d9c2" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="72" fill="#071018" />
+  <circle cx="256" cy="176" r="104" fill="url(#avatarGradient)" opacity="0.16" />
+  <circle cx="256" cy="176" r="84" fill="#0d1620" />
+  <circle cx="256" cy="176" r="60" fill="url(#avatarGradient)" opacity="0.9" />
+  <ellipse cx="256" cy="364" rx="152" ry="92" fill="#132231" />
+  <ellipse cx="256" cy="354" rx="132" ry="72" fill="url(#avatarGradient)" opacity="0.16" />
+  <path fill="#0d1620" d="M180 372c20-78 54-84 76-84s56 6 76 84H180z" opacity="0.96" />
+  <path fill="url(#avatarGradient)" d="M263 237s8 30-9 42c0 0-28-1-31-28 0 0 10-7 20-9 0 0 14 2 20-5z" opacity="0.65" />
+</svg>

@@ -178,12 +178,12 @@ button {
 }
 
 .hero__grid {
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.1fr 0.95fr;
   min-height: calc(100vh - 6rem);
 }
 
 .eyebrow {
-  margin: 0 0 0.85rem;
+  margin: 0 0 1rem;
   color: var(--accent);
   font-size: 0.82rem;
   font-weight: 700;
@@ -343,13 +343,13 @@ p {
 .hero-card {
   position: relative;
   overflow: hidden;
-  padding: 1.5rem;
+  padding: 1.75rem;
   border-radius: var(--radius-xl);
-  min-height: 34rem;
+  min-height: 32rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(180deg, rgba(18, 31, 44, 0.92), rgba(9, 17, 25, 0.94));
+  background: linear-gradient(180deg, rgba(18, 31, 44, 0.94), rgba(9, 17, 25, 0.96));
 }
 
 .hero-card__glow {
@@ -458,15 +458,24 @@ p {
   min-height: 28rem;
   border-radius: var(--radius-xl);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
 }
 
 .about-portrait__orbit {
   position: absolute;
   border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  opacity: 0.4;
+}
+
+.about-portrait__orbit--one {
+  inset: 8%;
+  border-color: rgba(39, 217, 194, 0.2);
+}
 
 .about-portrait__orbit--two {
-  inset: 22%;
-  border-color: rgba(25, 169, 255, 0.2);
+  inset: 20%;
+  border-color: rgba(25, 169, 255, 0.18);
 }
 
 .about-portrait__core {
